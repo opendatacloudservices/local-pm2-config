@@ -2,12 +2,12 @@
 const apps = {
     apps: [
         {
-            name: 'local-govdata-harvester',
+            name: 'local-ckan-harvester',
             script: './build/index.js',
-            cwd: '/home/sebastian/Sites/OpenDataCloudServices/local-govdata-harvester/',
+            cwd: '/home/sebastian/Sites/OpenDataCloudServices/local-ckan-harvester/',
             watch: false,
-            out_file: '/media/data/logs/local-govdata-harvester/out.log',
-            error_file: '/media/data/logs/local-govdata-harvester/error.log',
+            out_file: '/media/data/logs/local-ckan-harvester/out.log',
+            error_file: '/media/data/logs/local-ckan-harvester/error.log',
             env: {
                 PORT: 3003,
             },

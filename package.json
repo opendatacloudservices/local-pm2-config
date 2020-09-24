@@ -2,7 +2,7 @@
   "name": "local-pm2-config",
   "version": "1.0.2",
   "description": "process management through pm2",
-  "types": "./build/ecosystem.config.js",
+  "types": "./build/ecosystem.config.d.ts",
   "main": "./build/ecosystem.config.js",
   "scripts": {
     "check": "gts check src/**/*.ts src/*.ts",
