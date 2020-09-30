@@ -8,6 +8,7 @@ declare const apps: {
         error_file: string;
         env: {
             PORT: number;
+            NODE_ENV: string;
         };
     }[];
 };

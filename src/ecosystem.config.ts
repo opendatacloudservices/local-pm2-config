@@ -8,6 +8,7 @@ const apps: {
     error_file: string;
     env: {
       PORT: number;
+      NODE_ENV: string;
     };
   }[];
 } = {
@@ -21,6 +22,7 @@ const apps: {
       error_file: '/media/data/logs/local-ckan-harvester/error.log',
       env: {
         PORT: 3003,
+        NODE_ENV: 'production',
       },
     },
   ],
