@@ -9,7 +9,7 @@ const apps = {
             out_file: '/media/data/logs/local-ckan-harvester/out.log',
             error_file: '/media/data/logs/local-ckan-harvester/error.log',
             exec_mode: 'fork',
-            max: 5,
+            max: 10,
             env: {
                 PORT: 3003,
                 NODE_ENV: 'production',
