@@ -29,6 +29,20 @@ const apps: {
         NODE_ENV: 'production',
       },
     },
+    {
+      name: 'local-orchestration',
+      script: './build/index.js',
+      cwd: '/home/sebastian/Sites/OpenDataCloudServices/local-orchestration/',
+      watch: false,
+      out_file: '/media/data/logs/local-orchestration/out.log',
+      error_file: '/media/data/logs/local-orchestration/error.log',
+      exec_mode: 'fork',
+      max: 1,
+      env: {
+        PORT: 3004,
+        NODE_ENV: 'production',
+      },
+    },
   ],
 };
 
