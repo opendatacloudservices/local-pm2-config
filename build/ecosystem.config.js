@@ -43,6 +43,20 @@ const apps = {
                 NODE_ENV: 'production',
             },
         },
+        {
+            name: 'local-import-data',
+            script: './build/index.js',
+            cwd: '/home/sebastian/Sites/OpenDataCloudServices/local-import-data/',
+            watch: false,
+            out_file: '/media/data/logs/local-import-data/out.log',
+            error_file: '/media/data/logs/local-import-data/error.log',
+            exec_mode: 'fork',
+            max: 1,
+            env: {
+                PORT: 3006,
+                NODE_ENV: 'production',
+            },
+        },
     ],
 };
 module.exports = apps;
