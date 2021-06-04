@@ -71,6 +71,20 @@ const apps: {
         NODE_ENV: 'production',
       },
     },
+    {
+      name: 'local-download-data',
+      script: './build/index.js',
+      cwd: '/home/sebastian/Sites/OpenDataCloudServices/local-download-data/',
+      watch: false,
+      out_file: '/media/data/logs/local-download-data/out.log',
+      error_file: '/media/data/logs/local-download-data/error.log',
+      exec_mode: 'fork',
+      max: 3,
+      env: {
+        PORT: 3007,
+        NODE_ENV: 'production',
+      },
+    },
   ],
 };
 
