@@ -71,6 +71,20 @@ const apps = {
                 NODE_ENV: 'production',
             },
         },
+        {
+            name: 'local-csw-harvester',
+            script: './build/index.js',
+            cwd: '/home/sebastian/Sites/OpenDataCloudServices/local-csw-harvester/',
+            watch: false,
+            out_file: '/media/data/logs/local-csw-harvester/out.log',
+            error_file: '/media/data/logs/local-csw-harvester/error.log',
+            exec_mode: 'fork',
+            max: 1,
+            env: {
+                PORT: 3008,
+                NODE_ENV: 'production',
+            },
+        },
     ],
 };
 module.exports = apps;
