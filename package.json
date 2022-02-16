@@ -1,9 +1,16 @@
 {
   "name": "@opendatacloudservices/local-pm2-config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "process management through pm2",
   "types": "./build/ecosystem.config.d.ts",
   "main": "./build/ecosystem.config.js",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "engines" : { 
+    "npm" : ">=8.4.1",
+    "node" : ">=17.5.0"
+  },
   "scripts": {
     "check": "gts check src/**/*.ts src/*.ts",
     "clean": "gts clean src/**/*.ts src/*.ts",
